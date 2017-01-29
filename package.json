@@ -3,15 +3,12 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "serve": "live-server --host=localhost",
-    "build": "watchify --debug main.js -o bundle.js -v -t [ babelify ]"
+    "budo": "budo main.js --live -- -t [ babelify ]"
   },
   "devDependencies": {
     "babel-preset-es2015": "^6.18.0",
     "babelify": "^7.3.0",
-    "eslint": "^3.8.1",
-    "live-server": "^1.2.0",
-    "watchify": "^3.8.0"
+    "budo": "^9.4.5",
+    "eslint": "^3.8.1"
   }
 }
