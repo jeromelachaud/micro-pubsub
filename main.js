@@ -1,8 +1,5 @@
-import pubsub from './pubsub';
-let emitter = pubsub();
+import actionRegister1 from './actions-register';
+import actionEmitter1 from './actions-emitter';
 
-emitter.on('foo', alert);
-emitter.emit('foo', {
-  a: 'bar',
-  b: 'baz'
-});
+actionRegister1();
+actionEmitter1();
