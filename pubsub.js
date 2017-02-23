@@ -1,4 +1,4 @@
-export default function pubsub(all) {
+function pubsub(all) {
   all = all || {};
 
   function list(event) {
@@ -21,3 +21,5 @@ export default function pubsub(all) {
     }
   };
 }
+
+export default new pubsub();
